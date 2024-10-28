@@ -287,6 +287,29 @@
     margin-top: 20px;
 }
 
+.hamburger__menu {
+    position: relative;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.hamburger__icon span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--charcoal-black);
+    margin: 1px 0;
+    transition: 0.3s ease;
+    
+
+}
 
 
 /*Footer*/
