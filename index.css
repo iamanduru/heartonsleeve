@@ -17,12 +17,24 @@
     margin: 0;
     padding: 0;
     background-color: var(--soft-cream);
-    font-family: "Playfair", sans-serif;
+    font-family: "Playfair", serif;
     box-sizing: border-box;
 }
 
-html {
+
+ html {
     scroll-behavior: smooth;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main__container{
+    flex: 1;
 }
 
 .navbar {
@@ -42,22 +54,25 @@ html {
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
+    background-color: transparent;
 }
 
 .nav__links {
     display: flex;
     gap: 2rem;
-    background: linear-gradient(45deg, var(--burnt-sienna), var(--orange-gradient), var(--sage-green));
+    background-color: transparent;
 }
 
 .nav__links a {
     color: var(--charcoal-black);
     text-decoration: none;
     font-weight: 700;
+    background-color: transparent;
 }
 
 .nav__links a:hover {
     opacity: 0.8;
+    color: var(--soft-cream);
 }
 
 .subscribe__btn {
@@ -95,7 +110,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 
@@ -104,6 +119,7 @@ html {
     z-index: 1;
     text-align: center;
     padding-top: 35vh;
+    background-color: transparent;
 }
 
 .hero__content h1 {
@@ -112,6 +128,7 @@ html {
     font-style: italic;
     font-size: 3.5rem;
     line-height: 1.2;
+    background-color: transparent;
 }
 
 .blog__btn {
@@ -125,7 +142,7 @@ html {
 }
 
 .blog__btn:hover {
-    transition: translateY(-3px);
+    transform: translateY(-3px);
 }
 
 .blog__grid {
@@ -172,6 +189,13 @@ html {
     font-style: italic;
 }
 
+.blog__author {
+    color: var(--charcoal-black);
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 800;
+}
+
 .blog__excerpt {
     color: var(--olive);
     margin-bottom: 1rem;
@@ -180,10 +204,97 @@ html {
     font-weight: 700;
 }
 
+/* Blog Page*/
+.blog {
+    padding: 20px;
+}
+.the__blogs {
+    color: var(--charcoal-black);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    font-size: 4.5rem;
+    background-color: transparent;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.the__blog__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.the__blog__card {
+    width: 300px;
+    background-color: var(--soft-cream);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.the__blog__image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.the__blog__card .read__more {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--deep-mustard);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-weight: 800;
+    color: var(--charcoal-black);
+}
+
+.the__blog__card .read__more:hover {
+    background-color: var(--sage-green);
+
+}
+
+.the__blog__date {
+    color: var(--charcoal-black);
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.the__blog__author {
+    color: var(--charcoal-black);
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 5rem;
+    
+}
+
+.the__blog__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 4rem 5%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+/*Footer*/
 footer {
     background-color: var(--burnt-sienna);
-    padding: 2rem 5%;
+    padding: 2rem;
     text-align: center;
+    margin-top: auto;
 }
 
 .social__links {
@@ -191,6 +302,7 @@ footer {
     justify-content: center;
     gap: 1.5rem;
     margin-bottom: 1rem;
+    background-color: transparent;
 }
 
 .social__links a {
@@ -198,24 +310,34 @@ footer {
     text-decoration: none;
     font-size: 1.5rem;
     transition: transform 0.3s ease;
+    background-color: transparent;
 }
 
 .social__links a:hover {
     transform: translateY(-3px);
+    color: var(--warm-terracotta);
+    background-color: transparent;
+}
+
+i {
+    background-color: transparent;
 }
 
 .footer__nav {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    background-color: transparent;
 }
 
 .footer__nav a {
     color: var(--charcoal-black);
     text-decoration: none;
     transition: opacity 0.3s ease;
+    background-color: transparent;
 }
 
 .footer__nav a:hover {
     opacity: 0.8;
+    color: var(--warm-terracotta);
 }
