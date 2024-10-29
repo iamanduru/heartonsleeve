@@ -47,19 +47,23 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--charcoal-black);
+    background-color: transparent;
 }
 
 .nav__links {
     list-style: none;
     display: flex;
     gap: 20px;
+    background-color: transparent;
 }
+
 
 .nav__links a {
     text-decoration: none;
     color: var(--charcoal-black);
     font-weight: bold;
     transition: color 0.3s ease;
+    
 }
 
 .nav__links a:hover {
@@ -387,6 +391,43 @@
 .sidebar__social a:hover i {
     color: var(--charcoal-black);
 }
+
+/*About Me*/
+.about__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: #f4f4f4;
+    gap: 40px;
+}
+
+.about-content {
+    max-width: 600px;
+    color: #333;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.feather-icon {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.about-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
 
 /*Footer*/
 footer {
