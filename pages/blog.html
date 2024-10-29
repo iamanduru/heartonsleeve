@@ -25,7 +25,7 @@
             <section class="blog">
                 <div class="blog__section">
                     <h1 class="the__blogs">The Blogs</h1>
-                    <div class="hamburger__menu">
+                    <div class="hamburger__menu" onclick="toggleSidebar()">
                         <div class="hamburger__icon">
                             <span></span>
                             <span></span>
@@ -33,7 +33,7 @@
                         </div>
                     </div>
 
-                    <div class="sidebar__overlay">
+                    <div class="sidebar__overlay" id="sidebar">
                         <div class="sidebar__content">
                             <div class="sidebar__navigation">
                                 <i class="fas fa-home"></i>
@@ -123,5 +123,7 @@
         </div>
     </footer>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
