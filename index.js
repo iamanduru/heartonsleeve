@@ -1,6 +1,5 @@
-const hamburgerMenu = document.getElementById('hamburger__menu');
-const sidebar = document.getElementById('sidebar');
-
-hamburgerMenu.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
-});
+function toggleSidebar() {
+    const sidebarOverlay = document.getElementById("sidebar");
+    sidebarOverlay.classList.toggle('active');
+    console.log("Sidebar toggle function triggered"); // Debugging statement
+}
