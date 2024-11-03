@@ -365,7 +365,6 @@ body {
   cursor: pointer;
 }
 
-/*About Me*/
 
 /*Single post */
 
@@ -537,6 +536,45 @@ body {
     font-weight: bold;
 }
 
+/*About section*/
+.about__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    color: #333;
+    text-align: left;
+}
+
+
+.about__content {
+    max-width: 50%;
+    padding: 1rem;
+}
+
+.about__content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    margin-right: 0.5rem;
+}
+
+.about__content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.about__image img {
+    width: 300px;
+    border-radius: 5px;
+    flex-direction: column;
+}
 
 /*Footer*/
 footer {
