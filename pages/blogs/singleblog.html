@@ -12,7 +12,7 @@
         <nav class="navbar">
             <div class="logo">Heart on Sleeve</div>
             <ul class="nav__links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/pages/blog.html">Blog</a></li>
                 <li><a href="/pages/aboutme.html">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -21,62 +21,70 @@
         </nav>
     </header>
         
-            <main>
-               <div class="post__container">
-                <div class="post__title">
+            <main  class="content__container">
+                <article class="post__container">
                     <h1 class="post__heading">The art of Imperfection: The Beauty in the Flaws</h1>
-                    <p class="post__author">By Anduru</p>
-                    <p class="intr__text">
+                    <p class="post__author">By Megan Anduru</p>
+                    <p class="intro__text">
                         In a world obsessed with perfection, we often forget that it’s the imperfections that make life interesting, and more importantly, real. 
                         The chipped edges, the missteps, the moments when things don’t go as planned—they're all part of the human experience.
                         <br>Growing up, I spent years chasing perfection. Every flaw felt like a failure, every mistake a reason to doubt myself. 
                         But as time went on, I realized that my imperfections were what made me me. They weren’t failures; they were lessons. Each one taught me resilience,
-                         patience, and the courage to try again.
+                         patience, and the courage to try again. 
                     </p>
-
                     <div class="post__content">
                         <img class="post__image" src="/images/a-month-2293787_640.jpg" alt="moon">
-                        <p class="post__content__text">
-                            The truth is, perfection is an illusion. It’s the cracks in our journey that let the light in. It’s in those moments of vulnerability and uncertainty that we truly grow. 
-                            When we stop trying to smooth every edge, we open ourselves to unexpected beauty, peace, and a deeper connection to ourselves and others.
-                            <br>So here’s to embracing our flaws, letting go of unrealistic expectations, and finding strength in our beautifully imperfect selves. 
-                            Life wasn’t meant to be perfect—it was meant to be real.
-                        </p>
+                        <div class="post__content__text">
+                            <p>The truth is, perfection is an illusion. It’s the cracks in our journey that let the light in. It’s in those moments of vulnerability and uncertainty that we truly grow. 
+                                When we stop trying to smooth every edge, we open ourselves to unexpected beauty, peace, and a deeper connection to ourselves and others.
+                                <br>So here’s to embracing our flaws, letting go of unrealistic expectations, and finding strength in our beautifully imperfect selves. </p><br>
+                                <p>The truth is, perfection is an illusion. It’s the cracks in our journey that let the light in. It’s in those moments of vulnerability and uncertainty that we truly grow. 
+                                    When we stop trying to smooth every edge, we open ourselves to unexpected beauty, peace, and a deeper connection to ourselves and others.
+                                    <br>So here’s to embracing our flaws, letting go of unrealistic expectations, and finding strength in our beautifully imperfect selves. </p>
+                        </div>
                     </div>
-                </div>
+                </article>
 
-                <!--Side section-->
-                <aside>
+                <!--Sidebar section-->
+                <aside class="column__sidebar">
                     <div class="sidebar__widget">
-                        <h2>The Art of Imperfection: The Beauty in the Flaws</h2>
+                        <h2>About This Post</h2>
                         <p>Perfection is an illusion. It’s through our cracks that light and growth emerge. By embracing our flaws and letting go of unrealistic expectations, we find beauty, 
                             peace, and connection in our imperfect selves. Life isn’t about perfection—it’s about being real.</p>
-                        <a href="#">Read More</a>
+                        <a href="">Read more</a>
                     </div>
 
-                    <div class="comment__section">
+                    <div class="sidebar__widget">
+                        <h2>Related Posts</h2>
+                        <ul>
+                            <li><a href="">The Power of vulnerability</a></li>
+                            <li><a href="">Embracing the Uncertain</a></li>
+                        </ul>
+                    </div>
+
+                    <section class="comment__section">
                         <h3>Comments</h3>
-                        <form action="">
-                            <label for="name"> Name (Required)</label>
-                            <input type="text" id="name" required>
-
+                        <form action="#">
+                            <label for="name">Name (Required)</label>
+                            <input type="text" id="name" name="name" required>
                             <label for="comment">Comment</label>
-                            <textarea name="comment" id="comment" rows="5"></textarea>
-
+                            <textarea name="comment" id="comment" rows="4" required></textarea>
                             <div class="form__checkbox">
-                                <input type="checkbox" id="notify">
-                                <label for="notify">Email me when my comment is published</label>
+                                <input type="checkbox" id="subscribe" name="subscribe">
+                                <label for="subscribe">Email me when my comment is published</label>
                             </div>
-
                             <div class="form__buttons">
-                                <button type="button" class="cancel__btn">Cancel</button>
+                                <button type="reset" class="cancel__byn">Cancel</button>
                                 <button type="submit" class="submit__btn">Submit</button>
                             </div>
                         </form>
-                    </div>
+                    </section>
                 </aside>
-               </div>
             </main>
+
+            <!--Comment section-->
+
+            
         
             <footer>
                 <div class="social__links">
