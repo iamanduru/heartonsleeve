@@ -1,17 +1,24 @@
 function toggleSidebar() {
-    // Get the sidebar element
     const sidebar = document.getElementById('sidebar');
-    
-    // Toggle the 'active' class
     sidebar.classList.toggle('active');
+    console.log('Sidebar toggled');
 }
 
-// Optional: Close sidebar when clicking outside
+//Close sidebar
+
 document.addEventListener('click', function(event) {
     const sidebar = document.getElementById('sidebar');
-    const hamburger = document.querySelector('.hamburger__menu');
-    
-    if (!sidebar.contains(event.target) && !hamburger.contains(event.target) && sidebar.classList.contains('active')) {
+    const hamburgerMenu = document.querySelector('.hamburger__menu');
+
+    if (!sidebar.contains(event.target) && !hamburgerMenu.contains(event.target)) {
         sidebar.classList.remove('active');
     }
+});
+
+//Home hamburger
+const hamburger = document.querySelector('.nav__hamburger');
+const navLinks = document.querySelector('.nav__links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
