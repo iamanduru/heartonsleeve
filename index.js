@@ -22,3 +22,4 @@ const navLinks = document.querySelector('.nav__links');
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
+
